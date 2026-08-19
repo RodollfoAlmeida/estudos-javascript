@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificando o Pais que voce mora</title>
+</head>
+<body>
+    <h1>Verifcando o Pais que você mora</h1>
+    Em qual País voce nasceu? <input type="text" name="paistxt" id="paistxt">
+    <input type="button" value="Verificar" onclick="ver_nacionalidade()">
+    <div id="mensagem">
+    </div>
+
+    <script>
+        function ver_nacionalidade() {
+        var pais = window.document.getElementById('paistxt')
+        var mensagem = window.document.getElementById('mensagem')
+
+        if (pais.value.toLowerCase() == 'brasil') {
+            mensagem.innerHTML = `Que Legal, voce é Brasileiro`
+        } else {
+            mensagem.innerHTML = `Hummm, voce é Estrangeiro`
+        }
+        }
+    </script>
+</body>
+</html>
