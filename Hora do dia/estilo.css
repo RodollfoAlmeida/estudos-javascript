@@ -13,7 +13,7 @@ section {
 background: white;
 border-radius: 10px;
 padding: 15px;
-width: 500px;
+width: 400px;
 margin: auto;
 box-shadow: 5px 3px 10px rgba(26, 23, 23, 0.5);
 
@@ -23,4 +23,23 @@ footer {
     color: white;
     text-align: center;
     font-style: italic;
+}
+
+#imagem {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+#foto {
+    
+    
+}
+
+#msg {
+    color: black;
+}
+
+p {
+    color: black;
 }
