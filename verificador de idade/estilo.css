@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(19, 125, 224, 0.753);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#nascimento {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
