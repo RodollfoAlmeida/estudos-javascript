@@ -1,11 +1,31 @@
 function contar() {
-    var inicio = window.document.getElementById('txtinicio')
-    var fim = window.document.getElementById('txtfim')
-    var passo = window.document.getElementById('txtpasso')
-    var pulo = 
-    //alert(inicio.value + fim.value + passo.value)
-    while (Number(inicio.value) <= (fim.value)) {
-        alert(pulo.value)
-        pulo.value += inicio.value + passo.value
+    var inicio = window.document.getElementById('txtinicio').value  
+    var fim = window.document.getElementById('txtfim').value
+    var passo = window.document.getElementById('txtpasso').value
+    
+    
+    if (inicio.trim() === "" || fim.trim() === "") {
+        res.innerHTML = "Impossivel contar!";
+        return;
+    }    
+
+    inicio = Number(inicio)
+    fim = Number(fim)
+    passo = Number(passo)
+    var contador = inicio
+
+    if (passo <= 0) {
+    window.alert("Passo inválido, Considerando Passo 1")
+    passo = 1   
     }
+
+    res.innerHTML = "Contando: "
+
+    while (contador <= fim) {        
+        res.innerHTML += (`${contador} 👉 `)
+        contador += passo
+    }
+
+    res.innerHTML += "🏁";
+ 
 }
