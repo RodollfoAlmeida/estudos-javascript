@@ -45,7 +45,8 @@ img {
     display: block;
 }
 
-textarea {
+select {
     overflow-y: scroll; 
     resize: none;
+
 }

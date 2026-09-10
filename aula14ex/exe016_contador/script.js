@@ -19,13 +19,21 @@ function contar() {
     passo = 1   
     }
 
-    res.innerHTML = "Contando: "
-
-    while (contador <= fim) {        
-        res.innerHTML += (`${contador} 👉 `)
-        contador += passo
-    }
-
-    res.innerHTML += "🏁";
+    res.innerHTML = "Contando: <br>"
+    
+    if (contador < fim) {
+    // contagem crescente 
+        while (contador <= fim) {        
+            res.innerHTML += (`${contador} 👉 `)
+            contador += passo
+        }
+    } else {
+    // cntagem regresiva
+        while (contador >= fim) {        
+            res.innerHTML += (`${contador} 👉 `)
+            contador -= passo  
+        }
+    }    
+        res.innerHTML += "🏁";
  
 }
