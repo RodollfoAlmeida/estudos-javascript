@@ -13,13 +13,9 @@ function tabuada() {
     res.innerHTML = ""
 
     while (contador <= 10) {
-
         let item = document.createElement("option")
-
         item.text = `${numero} x ${contador} = ${numero * contador}`
-
         res.appendChild(item)
-
         contador++
     }
 }
