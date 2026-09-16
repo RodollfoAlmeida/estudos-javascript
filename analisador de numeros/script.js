@@ -1,21 +1,18 @@
-function tabuada() {
-    var numero = window.document.getElementById("txtnum").value
+var numero = []
 
-    if (numero === "") {
-        window.alert("Por favor digite um número")
-        res.innerHTML = "<option>Digite um número acima</option>"
+function adicionar() {
+    var numero = [window.document.getElementById("txtnum").value]
+        numero.push(numero)
+
+    var opcao = document.createElement("option");
+    opcao.text = numero
+    document.getElementById("lista").add();
+
+    numero = Number(numero)
+
+    if (numero === "" || numero >= 101 || numero === 0 ) {
+        window.alert("Valor Invalido ou ja encontrado na lista.")
         return
     }
 
-    numero = Number(numero)
-    var contador = 1
-
-    res.innerHTML = ""
-
-    while (contador <= 10) {
-        let item = document.createElement("option")
-        item.text = `${numero} x ${contador} = ${numero * contador}`
-        res.appendChild(item)
-        contador++
-    }
 }
