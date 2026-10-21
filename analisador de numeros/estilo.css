@@ -3,11 +3,7 @@ body {
     font: normal 15pt Arial;
 }
 
-header {    
-    
-    
 
-}
 h1 {
     text-align: center;
     color: white;
@@ -46,10 +42,8 @@ img {
     display: block;
 }
 
-select {
-    overflow-y: scroll; 
-    resize: none;
-
+select#flista {
+    width: 150px;
 }
 
 #num {

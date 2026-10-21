@@ -1,18 +1,31 @@
-var numero = []
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
+
+function isNumero(n) {
+    if(Number(n) >= 1 && Number(n) <= 100) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
 
 function adicionar() {
-    var numero = [window.document.getElementById("txtnum").value]
-        numero.push(numero)
+    if(isNumero(num.value) && !inLista(num.value, valores)) {
+        window.alert('tudo ok')
 
-    var opcao = document.createElement("option");
-    opcao.text = numero
-    document.getElementById("lista").add();
-
-    numero = Number(numero)
-
-    if (numero === "" || numero >= 101 || numero === 0 ) {
-        window.alert("Valor Invalido ou ja encontrado na lista.")
-        return
+    } else {
+        window.alert('Valor invalido ou ja encontrado na lista')
     }
 
 }
