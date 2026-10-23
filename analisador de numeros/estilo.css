@@ -65,3 +65,13 @@ select#flista {
 option {
     width: 150px;
 }
+
+p {
+    font-size: 15pt;
+    color: black;
+    font-style: italic;
+}
+
+#copy {    
+    color: white;   
+}
